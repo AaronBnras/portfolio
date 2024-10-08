@@ -1,23 +1,44 @@
 .logo{
-    width: 100px !important;
-    height: 50px !important;
+    width: 8rem;
+    height: 3rem;
+    object-fit: cover;
 }
 .icon{
-    color: aliceblue;
-    width: 40px !important;
-    height: 30px !important;
-    
+    object-fit: cover;
+    width: 1rem;
+    height: 1rem;
+    margin: 0.5rem;
 }
 .navbar{
     height: 5rem;
     width: 100vw;
+    max-width: 100rem;
     margin: 0 auto;
     padding: 1rem 2rem;
     align-items: center;
     display: flex;
     justify-content: space-between;
-    /* position: -webkit-sticky; */
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 3;
+}
+.desktopMenuListName{
+    margin: 2rem;
+    cursor: pointer;
+}
+.desktopMenuListName:hover{
+    color: #3490dc;
+    border-bottom: 3px solid #3490dc;
+    padding-bottom: 0.5rem;
+}
+.desktopMenubtn{
+    background-color: white;
+    color: black;
+    border: none !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    padding: 0rem 1rem;
 }
