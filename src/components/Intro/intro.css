@@ -1,7 +1,7 @@
 #intro{
     height: calc(100vh - 5rem);
     width: 100vw;
-    max-width: 90rem;
+    max-width: 95rem;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
@@ -41,4 +41,25 @@
     justify-content: center;
     border-radius: 2rem;
     padding: 0rem 1rem;
+}
+.hello{
+    margin: 0;
+}
+.social{
+    display: flex;
+    justify-content: space-between;
+    max-width: 15rem !important;
+    margin-top: 1rem !important;;
+}
+
+@media screen and (max-width:840px){
+    .bg{
+        right: inherit;
+    }
+    .introContent{
+        font-size: 10vw;
+    }
+    .hello{
+        font-size: 4.5vw;
+    }
 }
