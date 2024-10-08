@@ -9,6 +9,11 @@ module.exports = {
         primary: '#3490dc',
         secondary: '#3490dc', 
       },
+      fontFamily: {
+        roboto: ['Roboto', 'sans-serif'],
+        ubuntu: ['Ubuntu', 'sans-serif'],
+        algerian: ['Algerian', 'serif'],
+      },
     },
   },
   plugins: [],
