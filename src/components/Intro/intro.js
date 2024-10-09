@@ -1,6 +1,8 @@
 import React from "react";
 import { BriefcaseIcon } from "@heroicons/react/24/outline";
-import { FaGithub, FaTwitter, FaInstagram, FaWhatsapp, FaLinkedin, FaFacebook } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaWhatsapp, FaLinkedin, FaFacebook } from "react-icons/fa";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSquareXTwitter, faSquareUpwork } from '@fortawesome/free-brands-svg-icons';
 import './intro.css';
 import bg from '../../assets/AronB.png'
 import { Link } from "react-scroll";
@@ -16,7 +18,7 @@ const Intro = () => {
                 <Link>
                     <button className="btn bg-gradient-to-r from-pink-500 to-primary">
                         <BriefcaseIcon className="h-6 w-6 icon" />
-                        <span>See My work</span>
+                        <span className="btntext">See My work</span>
                     </button>
                 </Link>
                 <div className="connect">
@@ -25,22 +27,25 @@ const Intro = () => {
                     </h2>
                     <div className="social">
                         <a href="https://github.com/AaronBnras" target="_blank" rel="noreferrer noopener" className="transition-transform duration-300 transform hover:scale-150">
-                            <FaGithub className="h-6 w-6 text-blue-300" />
+                            <FaGithub className="h-6 w-6 text-blue-400" />
                         </a>
                         <a href="https://m.facebook.com/aaron.maeda.7/" target="_blank" rel="noreferrer noopener" className="transition-transform duration-300 transform hover:scale-150">
-                            <FaFacebook className="h-6 w-6 text-blue-300" />
+                            <FaFacebook className="h-6 w-6 text-blue-400" />
                         </a>
                         <a href="https://www.instagram.com/aaronb_nras/profilecard/?igsh=anhnZ3VjdW1ncGd0" rel="noreferrer noopener" target="_blank" className="transition-transform duration-300 transform hover:scale-150">
-                            <FaInstagram className="h-6 w-6 text-blue-300 " />
+                            <FaInstagram className="h-6 w-6 text-blue-400 " />
                         </a>
                         <a href="https://wa.me/qr/6A2PPRR3CTT2L1" target="_blank" rel="noreferrer noopener" className="transition-transform duration-300 transform hover:scale-150">
-                            <FaWhatsapp className="h-6 w-6 text-blue-300" />
+                            <FaWhatsapp className="h-6 w-6 text-blue-400" />
                         </a>
                         <a href="https://www.linkedin.com/in/aaron-maeda-08a507286/" rel="noreferrer noopener" target="_blank" className="transition-transform duration-300 transform hover:scale-150">
-                            <FaLinkedin className="h-6 w-6 text-blue-300" />
+                            <FaLinkedin className="h-6 w-6 text-blue-400" />
                         </a>
                         <a href="https://x.com/AaronBnras?t=he2_L3Hsrjp_keMAri6N5A&s=09" rel="noreferrer noopener" target="_blank" className="transition-transform duration-300 transform hover:scale-150">
-                            <FaTwitter className="h-6 w-6 text-blue-300" />
+                            <FontAwesomeIcon icon={faSquareXTwitter} className="h-6 w-6 text-blue-400" />
+                        </a>
+                        <a href="https://www.upwork.com/freelancers/~0124c99594e97de01e?mp_source=share" rel="noreferrer noopener" target="_blank" className="transition-transform duration-300 transform hover:scale-150">
+                            <FontAwesomeIcon icon={faSquareUpwork} className="h-6 w-6 text-blue-400" />
                         </a>
                     </div>
                 </div>
