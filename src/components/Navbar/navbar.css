@@ -10,6 +10,7 @@
     margin: 0.5rem;
 }
 .navbar{
+    background-color: white !important;
     height: 5rem;
     width: 100vw;
     max-width: 95rem;
