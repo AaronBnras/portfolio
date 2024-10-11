@@ -25,3 +25,27 @@
     align-items: center;
     margin-top: 3rem !important;
 }
+.skillBars{
+    margin: 1.5rem;
+    width: 100vw;
+    max-width: 80%;
+    text-align: left !important;
+}
+
+.skillBar{
+    display: flex !important;
+    margin: 1rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    background: rgb(50, 50, 50);
+}
+.skillBarImg{
+    object-fit: cover;
+    height: 3rem !important;
+    width: 3rem !important;
+    margin-right: 2rem !important;
+}
+.skillBarText>p{
+    font-size: 0.75rem;
+    font-weight: 0.9rem;
+}
