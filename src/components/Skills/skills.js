@@ -21,54 +21,51 @@ const Skills = () => {
 
                 <div className="skillBars">
                     <div className="skillBar">
-                        <div>
+                        <div className="flex items-center">
                             <h1>01.</h1>
                         </div>
-                        <div>
+                        <div className="w-64 p-2 max-w-64 m-2">
                             <img src={WebApp} alt="WEB-Development" className="SkillBarImg" />
                         </div>
                         <div className="SkillBarText">
                             <h2>Website Design and Development</h2>
-                            <p>Creating cutting-edge, high-performing websites and online apps that boost enterprises, businesses, and personal brands to new heights while providing customized solutions that propel achievement is my area of expertise.</p>
+                            <p className="m-1">Creating cutting-edge, high-performing websites and online apps that boost enterprises, businesses, and personal brands to new heights while providing customized solutions that propel achievement is my area of expertise.</p>
                         </div>
                     </div>
                     <div className="skillBar">
-                        <div>
+                        <div className="flex items-center">
                             <h1>02.</h1>
                         </div>
-                        <div>
+                        <div className="w-64 p-2 max-w-64 m-2 mr-0">
                             <img src={MobileApp} alt="WEB-Development" className="SkillBarImg" />
                         </div>
                         <div className="SkillBarText">
-
                             <h2>Mobile Application Development</h2>
-                            <p>I design and develop cutting-edge, high-performing mobile applications that give flawless user experiences on all platforms and help you grow your company, corporation, or personal brand.</p>
+                            <p className="ml-1">I design and develop cutting-edge, high-performing mobile applications that give flawless user experiences on all platforms and help you grow your company, corporation, or personal brand.</p>
                         </div>
                     </div>
                     <div className="skillBar">
-                        <div>
+                        <div className="flex items-center">
                             <h1>03.</h1>
                         </div>
-                        <div>
+                        <div className="w-64 p-2 max-w-64 m-2 mr-0">
                             <img src={Design} alt="WEB-Development" className="SkillBarImg" />
                         </div>
                         <div className="SkillBarText">
-
                             <h2>Graphics Design</h2>
-                            <p>Invest in high-quality graphic materials to effectively brand your business or yourself. I create cards, banners, posters, logos, and much more to match your company's or personal style.</p>
+                            <p className="ml-1">Invest in high-quality graphic materials to effectively brand your business or yourself. I create cards, banners, posters, logos, and much more to match your company's or personal style.</p>
                         </div>
                     </div>
                     <div className="skillBar">
-                        <div>
+                        <div className="flex items-center">
                             <h1>04.</h1>
                         </div>
-                        <div>
+                        <div className="w-64 p-2 max-w-64 m-2 mr-0">
                             <img src={Mainanance} alt="WEB-Development" className="SkillBarImg" />
                         </div>
                         <div className="SkillBarText">
-
                             <h2>Web and Computer Maintenance</h2>
-                            <p>I provide comprehensive installation, configuration, troubleshooting, and maintenance services for computers and their related peripherals and devices, addressing both hardware and software requirements.</p>
+                            <p className="ml-1">I provide comprehensive installation, configuration, troubleshooting, and maintenance services for computers and their related peripherals and devices, addressing both hardware and software requirements.</p>
                         </div>
                     </div>
 
