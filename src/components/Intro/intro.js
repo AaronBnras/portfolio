@@ -10,9 +10,13 @@ const Intro = () => {
     return (
         <section className="" id="intro">
             <div className="introContent">
-                <div className="flex">
+                <div className="intro">
                     <div className="bg-clip-text text-transparent text-center lg:text-left bg-gradient-to-r from-pink-500 to-primary">
-                <span className="hello ml-1 text-6xl">Hello!?</span></div><div className="ml-1 text-6xl"><span>😀</span></div></div>
+                        <span className="hello ml-1 text-6xl">Hello!?</span>
+                    </div>
+                    <div className="ml-1"><span>😀</span>
+                    </div>
+                </div>
                 <p className="intropara ml-1 text-xl">Hi 👋🏾, I am Aaron Maeda,
                     and I'm an experienced backend web developer with a solid foundation in frontend and mobile application development.<br />
                     I can provide complete and well-rounded answers because I also have experience with computer and site maintenance.

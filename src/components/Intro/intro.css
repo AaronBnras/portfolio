@@ -9,7 +9,7 @@
 
 .bg {
     position: absolute;
-    top: -1rem;
+    top: 0;
     z-index: -1;
     right: 0;
     object-fit: cover;
@@ -26,9 +26,9 @@
 }
 
 .intropara {
-    max-width: 50rem !important;
-    margin-top: 2rem !important;
-    margin-bottom: 3rem !important;
+    max-width: 50rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
 }
 
 .connect {
@@ -70,9 +70,94 @@
     justify-content: space-between;
     max-width: 15rem !important;
     margin-top: 1rem !important;
+    width: 100%;
+}
+.intro{
+    display: flex;
+    font-size: 2rem !important;
 }
 
 /* Media query for smaller screens */
+@media screen and (max-width: 1200px) {
+    .introContent {
+        width: 60%;
+    }
+    
+    .bg {
+        max-width: 40%;
+    }
+    .intro{
+        font-size: 2rem !important;
+    }
+}
+@media screen and (max-width: 1080px) {
+    #intro {
+        flex-direction: column;
+        min-height: auto;
+        height: auto;
+    }
+    .intro{
+        font-size: 2.5rem !important;
+    }
+    .introContent {
+        width: 100%;
+        padding: 2rem 1rem;
+        order: 1;
+    }
+    
+    .bg {
+        position: static;
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        order: 2;
+        margin-top: 2rem;
+    }
+    
+    .intropara {
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .intro{
+        font-size: 2.5rem !important;
+    }
+    
+    .hello, .intropara {
+        text-align: center;
+    }
+    
+    .connect {
+        margin-top: 2rem !important;
+        text-align: center;
+    }
+    
+    .social {
+        justify-content: center;
+        max-width: 100% !important;
+    }
+    
+    .bg {
+        max-width: 80%;
+    }
+}
+@media screen and (max-width: 576px) {
+    .hello {
+        font-size: 2.5rem !important;
+    }
+    
+    .intropara {
+        font-size: 1rem !important;
+    }
+    
+    .bg {
+        max-width: 90%;
+    }
+    .intro{
+        font-size: 2rem !important;
+    }
+}
 @media only screen and (max-width: 968px) {
     #intro {
         height: auto;
@@ -97,16 +182,18 @@
         right: auto;
         height: auto;
         width: 100%;
+        top: -11rem;
+        margin-bottom: -11rem !important;
         
     }
 
     .connect {
-        margin-top: 2rem !important;
+        margin-top: 2rem;
     }
 
     .social {
         justify-content: center;
         max-width: 50rem !important;
-        justify-content: space-between;
     }
+    
 }
