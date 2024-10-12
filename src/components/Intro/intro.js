@@ -24,9 +24,9 @@ const Intro = () => {
                     </button>
                 </Link>
                 <div className="connect">
-                    <h2>Lets connect.
-                        <span class="w-8 h-[2px] bg-gradient-to-r from-pink-500 to-primary inline-block ml-2"></span>
-                    </h2>
+                    <h1 className="text-lg">Lets connect.
+                        <span class="w-10 h-[2px] bg-gradient-to-r from-pink-500 to-primary inline-block ml-2"></span>
+                    </h1>
                     <div className="social">
                         <a href="https://github.com/AaronBnras" target="_blank" rel="noreferrer noopener" className="transition-transform duration-300 transform hover:scale-150">
                             <FaGithub className="h-6 w-6 text-blue-400" />
