@@ -1,5 +1,10 @@
 import React from "react";
 import './works.css';
+import graphics from "../../assets/graphics.png"
+import graphics2 from "../../assets/graphics2.png"
+import webapp from "../../assets/WebApp.png"
+import mobileapp from "../../assets/mobileApp.png"
+import businesscard from "../../assets/BusinessCard.png"
 
 const Works = () => {
     return (
@@ -11,6 +16,23 @@ const Works = () => {
                     My latest and greatest creations.
                     <span className="block w-48 h-[2px] bg-gradient-to-r from-pink-500 to-blue-500 rounded-lg mx-auto my-4"></span>
                 </p>
+                <div className="">
+                    <div className="">
+                        <img src={webapp} alt="Web Application" className="" />
+                    </div>
+                    <div className="">
+                        <img src={mobileapp} alt="Mobile Application" className="" />
+                    </div>
+                    <div className="">
+                        <img src={graphics} alt="Logo" className="" />
+                    </div>
+                    <div className="">
+                        <img src={graphics2} alt="Logo" className="" />
+                    </div>
+                    <div className="">
+                        <img src={businesscard} alt="BUsiness Card" className="" />
+                    </div>
+                </div>
 
             </section>
         </div>
