@@ -11,8 +11,8 @@ const Navbar = () => {
             <div className="nav container mx-auto px-4 flex justify-between items-center h-16">
                 {/* Logo (hidden on small screens) and Name */}
                 <div className="flex items-center">
-                    <img src={logo} alt="logo" className="logo mr-2 hidden lg:block" /> {/* Only the logo is hidden on smaller screens */}
-                    <div className="ml-1 text-2xl lg:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-primary">
+                    <img src={logo} alt="logo" className="logo mr-2" /> {/* Only the logo is hidden on smaller screens */}
+                    <div className="ml-1 text-2xl lg:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-primary hidden lg:block">
                         <span className="font-ubuntu">Aaron</span>
                         <span className="font-ubuntu">Maeda</span>
                     </div>
