@@ -21,7 +21,7 @@ const Intro = () => {
                     Hi 👋🏾, I am Aaron Maeda, and I'm an experienced backend web developer with a solid foundation in frontend and mobile application development.<br />
                     I can provide complete and well-rounded answers because I also have experience with computer and site maintenance.
                 </p>
-                <Link to="works" smooth={true} duration={500}>
+                <Link to="works" smooth={true} duration={1000}>
                     <button className=" btn flex items-center px-6 py-3 bg-gradient-to-r from-pink-500 to-primary text-white rounded-full hover:shadow-lg transition duration-300">
                         <BriefcaseIcon className="h-6 w-6 mr-2" />
                         <span>See My Work</span>
