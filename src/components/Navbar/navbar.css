@@ -1,50 +1,26 @@
-.logo{
+.logo {
     width: 8rem;
     height: 3rem;
     object-fit: cover;
 }
-.icon{
+
+.icon {
     object-fit: cover;
     width: 1rem;
     height: 1rem;
     margin: 0.5rem;
 }
-.navbar{
-    background-color: white !important;
-    height: 5rem;
-    width: 100vw;
-    max-width: auto;
-    margin: 0 auto;
-    padding: 1rem 2rem;
-    align-items: center;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 3;
-}
-.nav{
-    justify-content: space-between;
-    display: flex;
-    width: auto;
-    align-items: center;
-    position: -webkit-sticky;
-    position: sticky;
-    max-width: 92rem;
-    padding: 1rem auto;
-    margin: 0 auto;
-    top: 0;
-    z-index: -3;
-}
-.desktopMenuListName{
-    margin: 2rem;
+
+.desktopMenuListName {
+    margin: 1rem;
     cursor: pointer;
 }
+
 .desktopMenuListName:hover {
-    background: linear-gradient(90deg, #3490dc, #ff69b4); /* Blue to pink gradient */
+    background: linear-gradient(90deg, #3490dc, #ff69b4); 
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    
     border-bottom: 3px solid;
     border-image: linear-gradient(90deg, #3490dc, #ff69b4) 1;
     padding-bottom: 0.5rem;
@@ -53,7 +29,7 @@
 .desktopMenubtn {
     background-color: white; 
     color: whitesmoke; 
-    transition: background 0.5s ease, transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease; /* Include color transition */
+    transition: background 0.5s ease, transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
     border: none; 
     display: flex;
     align-items: center;
@@ -72,9 +48,4 @@
     transform: scale(1.05); 
     font-weight: 400; 
     text-shadow: none; 
-}
-
-
-span{
-    font-family: 'Ubuntu', sans-serif !important;
 }

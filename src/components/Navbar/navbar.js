@@ -1,32 +1,58 @@
-import React from "react";
-import logo from "../../assets/AM_logo.png"
+import React, { useState } from "react";
+import logo from "../../assets/AM_logo.png";
 import './navbar.css';
 import { Link } from "react-scroll";
 
 const Navbar = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
     return (
-        <nav className="navbar">
-            <div className="nav">
-                <div className="flex items-baseline">
+        <nav className="navbar bg-white sticky top-1 z-50">
+            <div className="nav container mx-auto px-4 flex justify-between items-center h-16">
+                {/* Logo and Name */}
+                <div className="flex items-center">
                     <img src={logo} alt="logo" className="logo mr-2" />
-                    <div className="ml-1 text-4xl bg-clip-text text-transparent text-center lg:text-left bg-gradient-to-r from-pink-500 to-primary">
+                    <div className="ml-1 text-2xl lg:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-primary">
                         <span className="font-ubuntu">Aaron</span>
                         <span className="font-ubuntu">Maeda</span>
                     </div>
                 </div>
 
-                <div className="desktopMenu text-xl">
-                    <Link className="desktopMenuListName">Home</Link>
-                    <Link className="desktopMenuListName">What i do</Link>
-                    <Link className="desktopMenuListName">Portfolio</Link>
-                    <Link className="desktopMenuListName">Contacts</Link>
+                {/* Desktop Menu */}
+                <div className="hidden lg:flex text-xl items-center">
+                    <Link to="home" smooth className="desktopMenuListName">Home</Link>
+                    <Link to="services" smooth className="desktopMenuListName">What I Do</Link>
+                    <Link to="portfolio" smooth className="desktopMenuListName">Portfolio</Link>
+                    <Link to="contact" smooth className="desktopMenuListName">Contacts</Link>
+                    <button className="desktopMenubtn bg-gradient-to-r from-pink-500 to-primary ml-4">
+                        <span className="text-lg">Hire Me</span>
+                    </button>
                 </div>
-                <button className="desktopMenubtn bg-gradient-to-r from-pink-500 to-primary">
-                    <span className="text-lg">Hire Me</span>
-                </button>
+
+                {/* Hamburger Icon for Mobile */}
+                <div className="lg:hidden">
+                    <button onClick={() => setIsOpen(!isOpen)} className="text-gray-800 focus:outline-none">
+                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"}></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            {/* Mobile Menu */}
+            <div className={`transition-all duration-300 ease-in-out transform ${isOpen ? "max-h-screen opacity-100 scale-y-100" : "max-h-0 opacity-0 scale-y-0"} lg:hidden overflow-hidden`}>
+                <div className="bg-white flex flex-col items-center text-xl py-4 space-y-4">
+                    <Link to="home" smooth className="py-2" onClick={() => setIsOpen(false)}>Home</Link>
+                    <Link to="services" smooth className="py-2" onClick={() => setIsOpen(false)}>What I Do</Link>
+                    <Link to="portfolio" smooth className="py-2" onClick={() => setIsOpen(false)}>Portfolio</Link>
+                    <Link to="contact" smooth className="py-2" onClick={() => setIsOpen(false)}>Contacts</Link>
+                    <button className="desktopMenubtn bg-gradient-to-r from-pink-500 to-primary mt-4" onClick={() => setIsOpen(false)}>
+                        <span className="text-lg">Hire Me</span>
+                    </button>
+                </div>
             </div>
         </nav>
-    )
-}
+    );
+};
 
 export default Navbar;
