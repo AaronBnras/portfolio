@@ -7,7 +7,7 @@ import Mainanance from '../../assets/maintain.png'
 
 const Skills = () => {
     return (
-        <div className="bg-slate-400">
+        <div className="bg-slate-400 overflow-hidden">
             <section id="skills" className="overflow-hidden w-full max-w-7xl mx-auto flex flex-col justify-center text-center">
                 <span className="skillTitle text-5xl ml-1 pt-20 mb-6">
                     What I Do 🤔
@@ -15,7 +15,7 @@ const Skills = () => {
 
                 <p className="skillDesc text-lg font-medium max-w-lg mx-auto">
                     I provide these essential services both under contract and as a freelancer. Kindly check them out and let me know how I can help!
-                    <span className="block w-48 h-1 bg-gradient-to-r from-pink-500 to-blue-500 rounded-lg mx-auto my-4"></span>
+                    <span className="block w-48 h-[2px] bg-gradient-to-r from-pink-500 to-blue-500 rounded-lg mx-auto my-4"></span>
                 </p>
 
                 <div className="skillBars w-full max-w-5xl mx-auto flex flex-col space-y-8 lg:space-y-8 p-4">
