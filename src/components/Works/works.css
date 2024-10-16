@@ -1,0 +1,22 @@
+#works{
+    overflow: hidden;
+    min-height: calc(100vh-4rem);
+    width: 100vw;
+    max-width: 95rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: antiquewhite;
+}
+.workTitle{
+    padding-top: 4rem;
+    margin-bottom: 0.2rem;
+}
+.workDesc{
+    font-size: 1rem;
+    font-weight: 400;
+    max-width: 30rem;
+    margin: 0 auto;
+}
