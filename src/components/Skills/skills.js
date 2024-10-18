@@ -13,10 +13,11 @@ const Skills = () => {
                     What I Do 🤔
                 </span>
 
-                <p className="skillDesc text-lg font-medium max-w-lg mx-auto">
+                <p className="skillDesc text-base sm:text-lg md:text-xl font-medium max-w-lg mx-auto px-4 sm:px-0">
                     I provide these essential services both under contract and as a freelancer. Kindly check them out and let me know how I can help!
-                    <span className="block w-48 h-[2px] bg-gradient-to-r from-pink-500 to-blue-500 rounded-lg mx-auto my-4"></span>
+                    <span className="block w-32 sm:w-48 h-[2px] bg-gradient-to-r from-pink-500 to-blue-500 rounded-lg mx-auto my-4"></span>
                 </p>
+
 
                 <div className="skillBars w-full max-w-5xl mx-auto flex flex-col space-y-8 lg:space-y-8 p-4">
                     <div className="skillBar mb-1 flex flex-col lg:flex-row items-center lg:items-start lg:space-x-4 p-4 lg:p-8 bg-gray-700 rounded-xl transform transition-transform duration-300 hover:-translate-y-2 hover:scale-105 shadow-lg">
