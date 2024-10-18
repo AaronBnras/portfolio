@@ -23,7 +23,7 @@ const Navbar = () => {
                     <Link to="intro" smooth={true} duration={2000} className="desktopMenuListName">Home</Link>
                     <Link to="skills" smooth={true} duration={2000} className="desktopMenuListName">What I Do</Link>
                     <Link to="works" smooth={true} duration={2000} className="desktopMenuListName">Portfolio</Link>
-                    <Link to="contact" smooth={true} duration={2000} className="desktopMenuListName">Contacts</Link>
+                    <Link to="contacts" smooth={true} duration={2000} className="desktopMenuListName">Contacts</Link>
                     <button className="desktopMenubtn bg-gradient-to-r from-pink-500 to-primary ml-4">
                         <span className="text-lg">Hire Me</span>
                     </button>
@@ -49,10 +49,10 @@ const Navbar = () => {
             {/* Mobile Dropdown Menu with transition */}
             <div className={`transition-all duration-1000 ease-in-out transform ${isOpen ? "max-h-screen opacity-100 scale-y-100" : "max-h-0 opacity-0 scale-y-0"} lg:hidden overflow-hidden`}>
                 <div className="bg-white flex flex-col items-center text-xl py-4 space-y-4">
-                    <Link to="home" smooth className="py-2" onClick={() => setIsOpen(false)}>Home</Link>
-                    <Link to="services" smooth className="py-2" onClick={() => setIsOpen(false)}>What I Do</Link>
-                    <Link to="portfolio" smooth className="py-2" onClick={() => setIsOpen(false)}>Portfolio</Link>
-                    <Link to="contact" smooth className="py-2" onClick={() => setIsOpen(false)}>Contacts</Link>
+                    <Link to="intro" smooth className="py-2" onClick={() => setIsOpen(false)}>Home</Link>
+                    <Link to="skills" smooth className="py-2" onClick={() => setIsOpen(false)}>What I Do</Link>
+                    <Link to="works" smooth className="py-2" onClick={() => setIsOpen(false)}>Portfolio</Link>
+                    <Link to="contacts" smooth className="py-2" onClick={() => setIsOpen(false)}>Contacts</Link>
                 </div>
             </div>
         </nav>
