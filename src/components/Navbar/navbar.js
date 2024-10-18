@@ -50,8 +50,8 @@ const Navbar = () => {
             <div className={`transition-all duration-1000 ease-in-out transform ${isOpen ? "max-h-screen opacity-100 scale-y-100" : "max-h-0 opacity-0 scale-y-0"} lg:hidden overflow-hidden`}>
                 <div className="bg-white flex flex-col items-center text-xl py-4 space-y-4">
                     <Link to="intro" smooth={true} duration={3000} className="py-2" onClick={() => setIsOpen(false)}>Home</Link>
-                    <Link to="skills" smooth={true} duration={2000} className="py-2" onClick={() => setIsOpen(false)}>What I Do</Link>
-                    <Link to="works" smooth={true} duration={2000} className="py-2" onClick={() => setIsOpen(false)}>Portfolio</Link>
+                    <Link to="skills" smooth={true} duration={3000} className="py-2" onClick={() => setIsOpen(false)}>What I Do</Link>
+                    <Link to="works" smooth={true} duration={3000} className="py-2" onClick={() => setIsOpen(false)}>Portfolio</Link>
                     <Link to="contacts" smooth={true} duration={3000} className="py-2" onClick={() => setIsOpen(false)}>Contacts</Link>
                 </div>
             </div>
