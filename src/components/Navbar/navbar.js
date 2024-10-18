@@ -20,10 +20,10 @@ const Navbar = () => {
 
                 {/* Desktop Menu */}
                 <div className="hidden lg:flex text-xl items-center">
-                    <Link to="home" smooth className="desktopMenuListName">Home</Link>
-                    <Link to="services" smooth className="desktopMenuListName">What I Do</Link>
-                    <Link to="portfolio" smooth className="desktopMenuListName">Portfolio</Link>
-                    <Link to="contact" smooth className="desktopMenuListName">Contacts</Link>
+                    <Link to="intro" smooth={true} duration={2000} className="desktopMenuListName">Home</Link>
+                    <Link to="skills" smooth={true} duration={2000} className="desktopMenuListName">What I Do</Link>
+                    <Link to="works" smooth={true} duration={2000} className="desktopMenuListName">Portfolio</Link>
+                    <Link to="contact" smooth={true} duration={2000} className="desktopMenuListName">Contacts</Link>
                     <button className="desktopMenubtn bg-gradient-to-r from-pink-500 to-primary ml-4">
                         <span className="text-lg">Hire Me</span>
                     </button>

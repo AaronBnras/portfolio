@@ -7,7 +7,7 @@ import Mainanance from '../../assets/maintain.png'
 
 const Skills = () => {
     return (
-        <div className="bg-slate-400 overflow-hidden">
+        <div className="overflow-hidden">
             <section id="skills" className="overflow-hidden w-full max-w-7xl mx-auto flex flex-col justify-center text-center">
                 <span className="skillTitle text-5xl ml-1 pt-20 mb-6">
                     What I Do 🤔
@@ -19,8 +19,8 @@ const Skills = () => {
                 </p>
 
 
-                <div className="skillBars w-full max-w-5xl mx-auto flex flex-col space-y-8 lg:space-y-8 p-4">
-                    <div className="skillBar mb-1 flex flex-col lg:flex-row items-center lg:items-start lg:space-x-4 p-4 lg:p-8 bg-gray-700 rounded-xl transform transition-transform duration-300 hover:-translate-y-2 hover:scale-105 shadow-lg">
+                <div className="skillBars w-full max-w-5xl mx-auto flex flex-col space-y-8 lg:space-y-8 p-4 shadow-xl rounded-xl">
+                    <div className="skillBar mb-1 flex flex-col lg:flex-row items-center lg:items-start lg:space-x-4 p-4 lg:p-8 bg-gray-700 rounded-xl transform transition-transform duration-300 hover:-translate-y-2 hover:scale-105 shadow-xl">
                         <div className="flex-shrink-0 text-white text-5xl lg:text-6xl">01.</div>
                         <div className="w-64 p-4">
                             <img src={WebApp} alt="WEB-Development" className="w-full h-auto object-cover" />
