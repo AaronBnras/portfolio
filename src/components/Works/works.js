@@ -16,21 +16,25 @@ const Works = () => {
                     My latest and greatest creations.
                     <span className="block w-48 h-[2px] bg-gradient-to-r from-pink-500 to-blue-500 rounded-lg mx-auto my-4"></span>
                 </p>
-                <div className="">
-                    <div className="">
-                        <img src={webapp} alt="Web Application" className="" />
+                <div className="flex flex-wrap justify-center gap-8 mt-4">
+                    <div className="rounded-lg w-96 h-96 overflow-hidden">
+                        <img src={webapp} alt="Web Application" className="w-full h-full object-fill" />
                     </div>
-                    <div className="">
-                        <img src={mobileapp} alt="Mobile Application" className="" />
+
+                    <div className="rounded-lg w-96 h-96 overflow-hidden">
+                        <img src={mobileapp} alt="Mobile Application" className="w-full h-full object-fill" />
                     </div>
-                    <div className="">
-                        <img src={graphics} alt="Logo" className="" />
+
+                    <div className="rounded-lg w-96 h-96 overflow-hidden">
+                        <img src={graphics} alt="Logo" className="w-full h-full object-cover" />
                     </div>
-                    <div className="">
-                        <img src={graphics2} alt="Logo" className="" />
+
+                    <div className="rounded-lg w-96 h-96 overflow-hidden">
+                        <img src={graphics2} alt="Logo" className="w-full h-full object-cover" />
                     </div>
-                    <div className="">
-                        <img src={businesscard} alt="BUsiness Card" className="" />
+
+                    <div className="rounded-lg w-96 h-96 overflow-hidden">
+                        <img src={businesscard} alt="Business Card" className="w-full h-full object-cover" />
                     </div>
                 </div>
 
