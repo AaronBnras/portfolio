@@ -1,32 +1,48 @@
 import React, { useState } from "react";
+import { sendEmail } from "../../service/emailService";
 import './contacts.css';
 import { validateForm } from '../../utils/formValidation';
 import { HomeModernIcon, EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline";
 
 const Contacts = () => {
     const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
+        name: "",
+        email: "",
+        subject: "",
+        message: ""
     });
+
     const [errors, setErrors] = useState({});
+    const [successMessage, setSuccessMessage] = useState("");
 
     const handleInputChange = (e) => {
         setFormData({
             ...formData,
-            [e.target.name]: e.target.value,
+            [e.target.name]: e.target.value
         });
     };
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const validationErrors = validateForm(formData);
-        setErrors(validationErrors);
 
-        if (Object.keys(validationErrors).length === 0) {
-            console.log("Form submitted successfully!", formData);
+        const errors = validateForm(formData);
+        if (Object.keys(errors).length > 0) {
+            setErrors(errors);
+            return;
         }
+
+        setErrors({});
+
+        sendEmail(formData)
+            .then((response) => {
+                console.log('SUCCESS!', response.status, response.text);
+                setSuccessMessage('Your message has been sent successfully!');
+            })
+            .catch((error) => {
+                console.error('FAILED...', error);
+                setErrors({ emailError: 'Failed to send the message, please try again.' });
+            });
+
     };
     return (
         <div className="bg-blue-900 text-white py-12">
@@ -108,8 +124,8 @@ const Contacts = () => {
                                     />
                                     {errors.email && (
                                         <div className=" top-full mt-1 text-red-400 text-sm flex items-center space-x-2">
-                                        <span>* {errors.email}</span>
-                                    </div>
+                                            <span>* {errors.email}</span>
+                                        </div>
                                     )}
                                 </div>
 
@@ -124,8 +140,8 @@ const Contacts = () => {
                                     />
                                     {errors.subject && (
                                         <div className=" top-full mt-1 text-red-400 text-sm flex items-center space-x-2">
-                                        <span>* {errors.subject}</span>
-                                    </div>
+                                            <span>* {errors.subject}</span>
+                                        </div>
                                     )}
                                 </div>
 
@@ -140,8 +156,8 @@ const Contacts = () => {
                                     />
                                     {errors.message && (
                                         <div className=" top-full mt-1 text-red-400 text-sm flex items-center space-x-2">
-                                        <span>* {errors.message}</span>
-                                    </div>
+                                            <span>* {errors.message}</span>
+                                        </div>
                                     )}
                                 </div>
                                 <div>
@@ -149,6 +165,8 @@ const Contacts = () => {
                                         className="w-full p-4 bg-blue-500 text-white font-bold rounded-lg hover:bg-blue-600 transition-all">
                                         Send Message
                                     </button>
+                                    {successMessage && <p className="text-green-500 mt-4">{successMessage}</p>}
+                                    {errors.emailError && <p className="text-red-500 mt-4">{errors.emailError}</p>}
                                 </div>
                             </form>
                         </div>
