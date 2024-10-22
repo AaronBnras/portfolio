@@ -6,7 +6,7 @@ import { faSquareXTwitter, faSquareUpwork } from '@fortawesome/free-brands-svg-i
 
 const Footer = () => {
     return (
-        // <div className="bg-blue-950 text-white py-6 md:py-12">
+        <div className="bg-blue-950 text-white py-6 md:py-12">
             <footer className="h-auto" id="footer">
                 <div className="text-lg text-center md:text-left">
                     <h4 className="text-gray-300">Follow Me On</h4>
@@ -46,7 +46,7 @@ const Footer = () => {
                     </div>
                 </div>
             </footer>
-        // </div>
+        </div>
     )
 }
 
