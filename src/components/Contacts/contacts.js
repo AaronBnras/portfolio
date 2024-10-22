@@ -59,33 +59,33 @@ const Contacts = () => {
                         {/* Contact Items */}
                         <div className="space-y-6">
                             <div className="flex items-center">
-                                <div className="bg-blue-800 py-2 px-3 m-2 mr-4 rounded-lg">
+                                <div className="bg-blue-950 py-2 px-3 m-2 mr-4 rounded-lg">
                                     <HomeModernIcon className="h-10 w-10 m-2"></HomeModernIcon>
                                 </div>
                                 <div>
                                     <h4 className="text-lg font-semibold">My Location</h4>
-                                    <p className="text-gray-400">On the Internet 💻</p>
+                                    <p className="text-gray-300">On the Internet 💻</p>
                                 </div>
                             </div>
                             <div className="flex items-center">
-                                <div className="bg-blue-800 py-2 px-3 m-2 mr-4 rounded-lg">
+                                <div className="bg-blue-950 py-2 px-3 m-2 mr-4 rounded-lg">
                                     <EnvelopeIcon className="h-10 w-10 m-2"></EnvelopeIcon>
                                 </div>
                                 <div>
                                     <h4 className="text-lg font-semibold">Email Address</h4>
                                     <a href="mailto:aaronmaeda7311@gmail.com">
-                                        <p className="text-gray-400">aaronmaeda7311@gmail.com</p>
+                                        <p className="text-gray-300">aaronmaeda7311@gmail.com</p>
                                     </a>
                                 </div>
                             </div>
                             <div className="flex items-center">
-                                <div className="bg-blue-800 py-2 px-3 m-2 mr-4 rounded-lg">
+                                <div className="bg-blue-950 py-2 px-3 m-2 mr-4 rounded-lg">
                                     <PhoneIcon className="h-10 w-10 m-2"></PhoneIcon>
                                 </div>
                                 <div>
                                     <h4 className="text-lg font-semibold">Phone Number</h4>
                                     <a href="tel:+2557438735652">
-                                        <p className="text-gray-400">+255 743 873 652</p>
+                                        <p className="text-gray-300">+255 743 873 652</p>
                                     </a>
                                 </div>
                             </div>
@@ -94,14 +94,14 @@ const Contacts = () => {
 
                     {/* Contact Form Section */}
                     <div className="rounded-lg py-2 px-4 w-full md:w-1/3 lg:w-2/5 mx-auto">
-                        <div className="p-8 rounded-lg w-full shadow-lg bg-blue-800">
+                        <div className="p-8 rounded-lg w-full shadow-lg bg-blue-950">
                             <form className="space-y-6" onSubmit={handleSubmit}>
                                 {/* Name Field */}
                                 <div className="relative">
                                     <input
                                         type="text"
                                         name="name"
-                                        className="w-full p-4 text-black bg-white placeholder-gray-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                        className="w-full p-4 text-black bg-gray-300 placeholder-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                                         placeholder="Your Name"
                                         value={formData.name}
                                         onChange={handleInputChange}
@@ -119,7 +119,7 @@ const Contacts = () => {
                                         name="email"
                                         value={formData.email}
                                         onChange={handleInputChange}
-                                        className="w-full p-4 text-black bg-white placeholder-gray-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                        className="w-full p-4 text-black bg-gray-300 placeholder-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                                         placeholder="Your Email"
                                     />
                                     {errors.email && (
@@ -135,7 +135,7 @@ const Contacts = () => {
                                         name="subject"
                                         value={formData.subject}
                                         onChange={handleInputChange}
-                                        className="w-full p-4 text-black bg-white placeholder-gray-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                        className="w-full p-4 text-black bg-gray-300 placeholder-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                                         placeholder="Subject"
                                     />
                                     {errors.subject && (
@@ -151,7 +151,7 @@ const Contacts = () => {
                                         name="message"
                                         value={formData.message}
                                         onChange={handleInputChange}
-                                        className="w-full h-36 p-4 text-black bg-white placeholder-gray-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                        className="w-full h-36 p-4 text-black bg-gray-300 placeholder-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                                         placeholder="Your Message"
                                     />
                                     {errors.message && (
@@ -162,7 +162,7 @@ const Contacts = () => {
                                 </div>
                                 <div>
                                     <button type="submit"
-                                        className="w-full p-4 bg-blue-500 text-white font-bold rounded-lg hover:bg-blue-600 transition-all">
+                                        className="w-full p-4 bg-blue-800 text-white font-bold rounded-lg hover:bg-blue-500 transition-all">
                                         Send Message
                                     </button>
                                     {successMessage && <p className="text-green-500 mt-4">{successMessage}</p>}

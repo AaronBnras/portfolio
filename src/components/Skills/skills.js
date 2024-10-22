@@ -7,7 +7,7 @@ import Mainanance from '../../assets/maintain.png'
 
 const Skills = () => {
     return (
-        <div className="overflow-hidden">
+        <div className="overflow-hidden" style={{backgroundColor: "whitesmoke"}}>
             <section id="skills" className="overflow-hidden w-full max-w-7xl mx-auto flex flex-col justify-center text-center">
                 <span className="skillTitle text-5xl ml-1 pt-20 mb-6">
                     What I Do 🤔

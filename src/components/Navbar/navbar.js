@@ -24,16 +24,20 @@ const Navbar = () => {
                     <Link to="skills" smooth={true} duration={2000} className="desktopMenuListName">What I Do</Link>
                     <Link to="works" smooth={true} duration={2000} className="desktopMenuListName">Portfolio</Link>
                     <Link to="contacts" smooth={true} duration={2000} className="desktopMenuListName">Contacts</Link>
-                    <button className="desktopMenubtn bg-gradient-to-r from-pink-500 to-primary ml-4">
-                        <span className="text-lg">Hire Me</span>
-                    </button>
+                    <Link to="contacts" smooth={true} duration={2000}>
+                        <button className="desktopMenubtn bg-gradient-to-r from-pink-500 to-primary ml-4">
+                            <span className="text-lg">Hire Me</span>
+                        </button>
+                    </Link>
                 </div>
 
                 {/* Mobile Hire Me Button (visible on small screens only) */}
                 <div className="lg:hidden">
-                    <button className="desktopMenubtn bg-gradient-to-r from-pink-500 to-primary">
-                        <span className="text-lg">Hire Me</span>
-                    </button>
+                    <Link to="contacts" smooth={true} duration={3000}>
+                        <button className="desktopMenubtn bg-gradient-to-r from-pink-500 to-primary">
+                            <span className="text-lg">Hire Me</span>
+                        </button>
+                    </Link>
                 </div>
 
                 {/* Hamburger Icon for Mobile Menu */}
