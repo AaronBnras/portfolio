@@ -37,6 +37,14 @@ const Contacts = () => {
             .then((response) => {
                 console.log('SUCCESS!', response.status, response.text);
                 setSuccessMessage('Your message has been sent successfully!');
+
+                setFormData({
+                    name: '',
+                    email: '',
+                    subject: '',
+                    message: '',
+                })
+
             })
             .catch((error) => {
                 console.error('FAILED...', error);

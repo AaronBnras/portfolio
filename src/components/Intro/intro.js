@@ -54,8 +54,8 @@ const Intro = () => {
                     </div>
                 </div>
             </div>
-            <div className=" w-full lg:w-1/2 flex justify-center lg:justify-end mt-8 lg:mt-0">
-                <img src={bg} alt="profile" className=" bg-image w-full max-w-md lg:max-w-lg rounded-lg shadow-lg" />
+            <div className="w-full lg:w-1/2 flex justify-center lg:justify-end -mt-5 lg:mt-0 overflow-hidden">
+                <img src={bg} alt="profile" className="w-auto max-w-md lg:max-w-lg lg:h-auto max-h-screen object-contain rounded-lg shadow-lg" />
             </div>
         </section>
     )
