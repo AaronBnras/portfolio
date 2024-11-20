@@ -19,32 +19,41 @@ const Skills = () => {
                 </p>
 
                 <div className="skillBars w-full max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 p-4">
-                    <div className="skillBar flex flex-col items-center p-10 bg-blue-950 rounded-xl transform transition-transform duration-300 hover:-translate-y-2 hover:scale-105 shadow-xl">
-                        <img src={WebApp} alt="WEB-Development" className="w-32 h-auto my-4 object-cover" />
-                        <div className="flex-shrink-0 text-white text-5xl mb-6 text-right"><span>01.</span></div>
+                    <div className="skillBar flex flex-col p-10 bg-blue-950 rounded-xl transform transition-transform duration-300 hover:-translate-y-2 hover:scale-105 shadow-xl">
+                        <div className="items-center justify-center mx-auto">
+                            <img src={WebApp} alt="WEB-Development" className="w-64 h-auto my-4 object-cover" />
+                        </div>
+
+                        <div className="flex-shrink-0 text-white text-5xl font-bold mb-4 text-left">01.</div>
                         <h2 className="text-lg text-white">Website Design and Development</h2>
                         <p className="text-sm lg:text-base text-gray-300 mt-4">Creating cutting-edge, high-performing websites and online apps that boost enterprises, businesses, and personal brands to new heights while providing customized solutions that propel achievement is my area of expertise.</p>
                     </div>
 
-                    <div className="skillBar flex flex-col items-center text-center p-4 bg-blue-950 rounded-xl transform transition-transform duration-300 hover:-translate-y-2 hover:scale-105 shadow-lg">
-                        <div className="flex-shrink-0 text-white text-5xl">02.</div>
-                        <img src={MobileApp} alt="Mobile Development" className="w-32 h-auto my-4 object-cover" />
-                        <h2 className="text-2xl text-white mb-2">Mobile Application Development</h2>
-                        <p className="text-sm lg:text-base text-gray-300">I design and develop cutting-edge, high-performing mobile applications that give flawless user experiences on all platforms and help you grow your company, corporation, or personal brand.</p>
+                    <div className="skillBar flex flex-col p-10 bg-blue-950 rounded-xl transform transition-transform duration-300 hover:-translate-y-2 hover:scale-105 shadow-xl">
+                        <div className="items-center justify-center mx-auto">
+                            <img src={MobileApp} alt="Mobile Development" className="w-64 h-64 my-4 object-fill" />
+                        </div>
+                        <div className="flex-shrink-0 text-white text-5xl font-bold mb-4 text-left">02.</div>
+                        <h2 className="text-lg text-white">Mobile Application Development</h2>
+                        <p className="text-sm lg:text-base text-gray-300 mt-4">I design and develop cutting-edge, high-performing mobile applications that give flawless user experiences on all platforms and help you grow your company, corporation, or personal brand.</p>
                     </div>
 
-                    <div className="skillBar flex flex-col items-center text-center p-4 bg-blue-950 rounded-xl transform transition-transform duration-300 hover:-translate-y-2 hover:scale-105 shadow-lg">
-                        <div className="flex-shrink-0 text-white text-5xl">03.</div>
-                        <img src={Design} alt="Graphics Design" className="w-32 h-auto my-4 object-cover" />
-                        <h2 className="text-2xl text-white mb-2">Graphics Design</h2>
-                        <p className="text-sm lg:text-base text-gray-300">Invest in high-quality graphic materials to effectively brand your business or yourself. I create cards, banners, posters, logos, and much more to match your company's or personal style.</p>
+                    <div className="skillBar flex flex-col p-10 bg-blue-950 rounded-xl transform transition-transform duration-300 hover:-translate-y-2 hover:scale-105 shadow-xl">
+                        <div className="items-center justify-center mx-auto">
+                            <img src={Design} alt="Graphics Design" className="w-72 h-64 my-4 object-cover" />
+                        </div>
+                        <div className="flex-shrink-0 text-white text-5xl font-bold mb-4 text-left">03.</div>
+                        <h2 className="text-lg text-white">Graphics Design</h2>
+                        <p className="text-sm lg:text-base text-gray-300 mt-4">Invest in high-quality graphic materials to effectively brand your business or yourself. I create cards, banners, posters, logos, and much more to match your company's or personal style.</p>
                     </div>
 
-                    <div className="skillBar flex flex-col items-center text-center p-4 bg-blue-950 rounded-xl transform transition-transform duration-300 hover:-translate-y-2 hover:scale-105 shadow-lg">
-                        <div className="flex-shrink-0 text-white text-5xl">04.</div>
-                        <img src={Maintenance} alt="Web and Computer Maintenance" className="w-32 h-auto my-4 object-cover" />
-                        <h2 className="text-2xl text-white mb-2">Web and Computer Maintenance</h2>
-                        <p className="text-sm lg:text-base text-gray-300">I provide comprehensive installation, configuration, troubleshooting, and maintenance services for computers and their related peripherals and devices, addressing both hardware and software requirements.</p>
+                    <div className="skillBar flex flex-col p-10 bg-blue-950 rounded-xl transform transition-transform duration-300 hover:-translate-y-2 hover:scale-105 shadow-lg">
+                        <div className="items-center justify-center mx-auto">
+                        <img src={Maintenance} alt="Web and Computer Maintenance" className="w-64 h-auto my-4 object-cover" />
+                        </div>
+                        <div className="flex-shrink-0 text-white text-5xl font-bold mb-4 text-left">04.</div>
+                        <h2 className="text-lg text-white">Web and Computer Maintenance</h2>
+                        <p className="text-sm lg:text-base text-gray-300 mt-4">I provide comprehensive installation, configuration, troubleshooting, and maintenance services for computers and their related peripherals and devices, addressing both hardware and software requirements.</p>
                     </div>
                 </div>
             </section>
