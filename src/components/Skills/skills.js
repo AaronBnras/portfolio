@@ -23,7 +23,7 @@ const Skills = () => {
                 </p>
 
                 <div className="skillBars w-full max-w-7xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-between h-auto gap-4 px-2 sm:px-6 lg:px-8 md:px-6 py-8">
-                    <div className="skillBar flex flex-col text-left bg-blue-950 p-6 md:p-8 transform transition-transform duration-300 hover:-translate-y-2 hover:scale-105 shadow-xl">
+                    <div className="skillBar flex flex-col text-left bg-blue-950 m-4 md:m-0 lg:m-2 p-6 md:p-8 transform transition-transform duration-300 hover:-translate-y-2 hover:scale-105 shadow-xl">
                         <div className="items-center justify-center mx-auto">
                             <img
                                 src={WebApp}
@@ -44,7 +44,7 @@ const Skills = () => {
                             achievement is my area of expertise.
                         </p>
                     </div>
-                    <div className="skillBar flex flex-col bg-blue-950 p-6 md:p-8 text-left transform transition-transform duration-300 hover:-translate-y-2 hover:scale-105 shadow-xl">
+                    <div className="skillBar flex flex-col bg-blue-950 m-4 md:m-0 lg:m-2 p-6 md:p-8 text-left transform transition-transform duration-300 hover:-translate-y-2 hover:scale-105 shadow-xl">
                         <div className="items-center justify-center  mx-auto">
                             <img
                                 src={MobileApp}
@@ -64,7 +64,7 @@ const Skills = () => {
                             and help you grow your company, corporation, or personal brand.
                         </p>
                     </div>
-                    <div className="skillBar flex flex-col bg-blue-950 p-6 md:p-8 text-left transform transition-transform duration-300 hover:-translate-y-2 hover:scale-105 shadow-xl">
+                    <div className="skillBar flex flex-col bg-blue-950 m-4 md:m-0 lg:m-2 p-6 md:p-8 text-left transform transition-transform duration-300 hover:-translate-y-2 hover:scale-105 shadow-xl">
                         <div className="items-center justify-center mx-auto">
                             <img
                                 src={Design}
@@ -82,7 +82,7 @@ const Skills = () => {
                             much more to match your company's or personal style.
                         </p>
                     </div>
-                    <div className="skillBar flex flex-col bg-blue-950 p-6 md:p-8 text-left transform transition-transform duration-300 hover:-translate-y-2 hover:scale-105 shadow-xl">
+                    <div className="skillBar flex flex-col bg-blue-950 m-4 md:m-0 lg:m-2 p-6 md:p-8 text-left transform transition-transform duration-300 hover:-translate-y-2 hover:scale-105 shadow-xl">
                         <div className="items-center justify-center mx-auto">
                             <img
                                 src={Maintenance}
