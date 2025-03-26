@@ -53,9 +53,13 @@
     "autoprefixer": "^10.4.20",
     "babel-loader": "8.0.5",
     "postcss": "^8.4.47",
-    "tailwindcss": "^3.4.15"
+    "tailwindcss": "^3.4.15",
+    "webpack": "^5.89.0"
   },
   "overrides": {
-    "loader-utils": ">=3.2.1"
+    "loader-utils": "2.0.4",
+    "react-scripts": {
+      "loader-utils": "2.0.4"
+    }
   }
 }
