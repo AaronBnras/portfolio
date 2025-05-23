@@ -5,6 +5,7 @@ import graphics2 from "../../assets/graphics2.png"
 import webapp from "../../assets/WebApp.png"
 import mobileapp from "../../assets/mobileApp.png"
 import businesscard from "../../assets/BusinessCard.png"
+import workersday from "../../assets/workersday.png"
 
 const Works = () => {
     return (
