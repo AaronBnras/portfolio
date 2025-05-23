@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import './works.css';
 import graphics from "../../assets/graphics.png"
 import graphics2 from "../../assets/graphics2.png"
@@ -6,8 +6,11 @@ import webapp from "../../assets/WebApp.png"
 import mobileapp from "../../assets/mobileApp.png"
 import businesscard from "../../assets/BusinessCard.png"
 import workersday from "../../assets/workersday.png"
+import easter from "../../assets/EasterPoster.png"
 
 const Works = () => {
+    const [isOpen, setIsOpen] = useState(false);
+    const images = [workersday, easter];
     return (
         <div className=" py-12">
             <section id="works" className="overflow-hidden w-full max-w-7xl mx-auto flex flex-col justify-center text-center px-4">
@@ -26,7 +29,7 @@ const Works = () => {
                             <h1 className="">Homeless Management System</h1>
                         </div>
                         <div className="absolute flex-col inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center">
-                        <h1 className="p-2 px-4">Web Application</h1>
+                            <h1 className="p-2 px-4">Web Application</h1>
                             <a href="https://github.com/AaronBnras/-HIMS-_Homless_Information_Management_System-with-Laravel-" target="_blank" rel="noopener noreferrer" className="no-underline">
                                 <button className="justify-center rounded-lg px-4 py-2 border-white border-2 hover:bg-white hover:text-blue-950 transition-colors duration-300">View</button>
                             </a>
@@ -40,7 +43,7 @@ const Works = () => {
                             <h1 className="">My GreenHouse</h1>
                         </div>
                         <div className="absolute flex-col inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center">
-                        <h1 className="p-2 px-4">Mobile Application</h1>
+                            <h1 className="p-2 px-4">Mobile Application</h1>
                             <a href="https://github.com/AaronBnras/my_Greenhouse_App" target="_blank" rel="noopener noreferrer" className="no-underline">
                                 <button className="justify-center rounded-lg px-4 py-2 border-white border-2 hover:bg-white hover:text-blue-950 transition-colors duration-300">View</button>
                             </a>
@@ -54,7 +57,7 @@ const Works = () => {
                             <h1 className="">NERESSA companies</h1>
                         </div>
                         <div className="absolute flex-col inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center">
-                        <h1 className="p-2 px-4 justify-items-start">Logo</h1>
+                            <h1 className="p-2 px-4 justify-items-start">Logo</h1>
                             <a href={require('../../assets/graphics.png')} target="_blank" rel="noopener noreferrer" className="no-underline">
                                 <button className="justify-center rounded-lg px-4 py-2 border-white border-2 hover:bg-white hover:text-blue-950 transition-colors duration-300">View</button>
                             </a>
@@ -68,7 +71,7 @@ const Works = () => {
                             <h1 className="">FRIKISO</h1>
                         </div>
                         <div className="absolute flex-col inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center">
-                        <h1 className="p-2 px-4">Logo</h1>
+                            <h1 className="p-2 px-4">Logo</h1>
                             <a href={require('../../assets/graphics2.png')} target="_blank" rel="noopener noreferrer" className="no-underline">
                                 <button className="justify-center rounded-lg px-4 py-2 border-white border-2 hover:bg-white hover:text-blue-950 transition-colors duration-300">View</button>
                             </a>
@@ -82,7 +85,7 @@ const Works = () => {
                             <h1 className="">YSO Business Card</h1>
                         </div>
                         <div className="absolute flex-col inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center">
-                        <h1 className="p-2 px-4">Business Card</h1>
+                            <h1 className="p-2 px-4">Business Card</h1>
                             <a href={`${process.env.PUBLIC_URL}/Doc/Business Card (YSO).pdf`} target="_blank" rel="noopener noreferrer" className="no-underline">
                                 <button className="justify-center rounded-lg px-4 py-2 border-white border-2 hover:bg-white hover:text-blue-950 transition-colors duration-300">View</button>
                             </a>
@@ -95,12 +98,36 @@ const Works = () => {
                             <h1 className="">YSO Posters</h1>
                         </div>
                         <div className="absolute flex-col inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center">
-                        <h1 className="p-2 px-4">Posters</h1>
-                            <a href={require('../../assets/workersday.png')} target="_blank" rel="noopener noreferrer" className="no-underline">
+                            <h1 className="p-2 px-4">Posters</h1>
+                            {/* <a href={require('../../assets/workersday.png')} target="_blank" rel="noopener noreferrer" className="no-underline">
                                 <button className="justify-center rounded-lg px-4 py-2 border-white border-2 hover:bg-white hover:text-blue-950 transition-colors duration-300">View</button>
-                            </a>
+                            </a> */}
+                            <button onClick={() => setIsOpen(true)} className="justify-center rounded-lg px-4 py-2 border-white border-2 hover:bg-white hover:text-blue-950 transition-colors duration-300">
+                                View
+                            </button>
                         </div>
                     </div>
+
+                    {/* Model*/}
+                    {isOpen && (
+                        <div className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50">
+                            <div className="bg-white rounded-lg p-4 max-w-3xl w-full">
+                                <div className="flex justify-between items-center mb-4">
+                                    <h2 className="text-xl font-semibold">YSO Posters</h2>
+                                    <button onClick={() => setIsOpen(false)} className="text-black text-xl font-bold">
+                                        &times;
+                                    </button>
+                                </div>
+                                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                                    {images.map((img, index) => (
+                                        <img key={index} src={img} alt={`Poster ${index + 1}`} className="w-full h-48 object-cover rounded-lg" />
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+
+                    )}
+
                 </div>
             </section>
         </div>
