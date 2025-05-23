@@ -5,6 +5,7 @@ import graphics2 from "../../assets/graphics2.png"
 import webapp from "../../assets/WebApp.png"
 import mobileapp from "../../assets/mobileApp.png"
 import businesscard from "../../assets/BusinessCard.png"
+import workersday from "../../assets/workersday.png"
 
 const Works = () => {
     return (
@@ -83,6 +84,19 @@ const Works = () => {
                         <div className="absolute flex-col inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center">
                         <h1 className="p-2 px-4">Business Card</h1>
                             <a href={`${process.env.PUBLIC_URL}/Doc/Business Card (YSO).pdf`} target="_blank" rel="noopener noreferrer" className="no-underline">
+                                <button className="justify-center rounded-lg px-4 py-2 border-white border-2 hover:bg-white hover:text-blue-950 transition-colors duration-300">View</button>
+                            </a>
+                        </div>
+                    </div>
+                    {/* sixth Card (BUsiness Card) */}
+                    <div className="relative rounded-lg overflow-hidden shadow-2xl group transition-transform transform hover:scale-105">
+                        <img src={workersday} alt="Business Card" className="w-full h-64 object-cover" />
+                        <div className="bg-blue-950 p-2 px-4">
+                            <h1 className="">YSO Posters</h1>
+                        </div>
+                        <div className="absolute flex-col inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center">
+                        <h1 className="p-2 px-4">Posters</h1>
+                            <a href={require('../../assets/workersday.png')} target="_blank" rel="noopener noreferrer" className="no-underline">
                                 <button className="justify-center rounded-lg px-4 py-2 border-white border-2 hover:bg-white hover:text-blue-950 transition-colors duration-300">View</button>
                             </a>
                         </div>
