@@ -12,7 +12,7 @@ const Intro = () => {
         <section className="flex flex-col lg:flex-row items-center justify-between p-4 lg:p-8 overflow-hidden" id="intro">
             <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
                 <div className="flex items-center mb-4">
-                    <h1 className="text-4xl lg:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-primary">
+                    <h1 className="banco-font text-4xl lg:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-primary">
                         Hello!?
                     </h1>
                     <span className="text-4xl ml-2">😀</span>
