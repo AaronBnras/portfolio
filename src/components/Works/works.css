@@ -1,4 +1,10 @@
-#works{
+@import url('https://fonts.googleapis.com/css2?family=Banco&display=swap');
+
+.banco-font {
+    font-family: 'Banco', cursive;
+}
+
+#works {
     overflow: hidden;
     min-height: calc(100vh-4rem);
     width: 100vw;
@@ -9,11 +15,13 @@
     justify-content: center;
     text-align: center;
 }
-.workTitle{
+
+.workTitle {
     padding-top: 4rem;
     margin-bottom: 0.2rem;
 }
-.workDesc{
+
+.workDesc {
     font-size: 1rem;
     font-weight: 400;
     max-width: 30rem;
