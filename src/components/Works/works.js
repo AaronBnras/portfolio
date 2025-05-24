@@ -41,8 +41,8 @@ const Works = () => {
     return (
         <div className="py-12">
             <section id="works" className="overflow-hidden w-full max-w-7xl mx-auto flex flex-col justify-center text-center px-4">
-                <span className="workTitle text-lg font-semibold block">My Portfolio</span>
-                <h1 className="text-4xl md:text-5xl mt-2">What I Have Done 💼</h1>
+                <span className="workTitle text-lg font-semibold block banco-font">My Portfolio</span>
+                <h1 className="text-4xl md:text-5xl mt-2 banco-font">What I Have Done 💼</h1>
                 <p className="workDesc mt-4 max-w-2xl mx-auto">
                     My latest and greatest creations.
                     <span className="block w-48 h-[2px] bg-gradient-to-r from-pink-500 to-blue-500 rounded-lg mx-auto my-4"></span>
