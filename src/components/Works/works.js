@@ -7,6 +7,7 @@ import mobileapp from "../../assets/mobileApp.png";
 import businesscard from "../../assets/BusinessCard.png";
 import workersday from "../../assets/workersday.png";
 import easter from "../../assets/EasterPoster.png";
+import elegance from "../../assets/elegance.png";
 
 const Works = () => {
     const [modalType, setModalType] = useState(null);
@@ -15,7 +16,7 @@ const Works = () => {
     const closeModal = () => setModalType(null);
 
     const postersImages = [workersday, easter];
-    const logoImages = [graphics, graphics2];
+    const logoImages = [graphics, graphics2, elegance];
 
     // Reusable ModalGallery Component
     const ModalGallery = ({ title, images }) => (
@@ -73,20 +74,6 @@ const Works = () => {
                         </div>
                     </div>
 
-                    {/* Third Card (Logo)
-                    <div className="relative rounded-lg overflow-hidden shadow-2xl group transition-transform transform hover:scale-105">
-                        <img src={graphics} alt="Logo" className="w-full h-64 object-cover" />
-                        <div className="bg-blue-950 p-2 px-4">
-                            <h1 className="">NERESSA companies</h1>
-                        </div>
-                        <div className="absolute flex-col inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center">
-                            <h1 className="p-2 px-4 justify-items-start">Logo</h1>
-                            <a href={graphics} target="_blank" rel="noopener noreferrer" className="no-underline">
-                                <button className="justify-center rounded-lg px-4 py-2 border-white border-2 hover:bg-white hover:text-blue-950 transition-colors duration-300">View</button>
-                            </a>
-                        </div>
-                    </div> */}
-
                     {/* Fourth Card (Logo) */}
                     <div className="relative rounded-lg overflow-hidden shadow-2xl group transition-transform transform hover:scale-105">
                         <img src={graphics2} alt="Logo" className="w-full h-64 object-cover" />
@@ -95,9 +82,6 @@ const Works = () => {
                         </div>
                         <div className="absolute flex-col inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center">
                             <h1 className="p-2 px-4">Logo</h1>
-                            {/* <a href={graphics2} target="_blank" rel="noopener noreferrer" className="no-underline">
-                                <button className="justify-center rounded-lg px-4 py-2 border-white border-2 hover:bg-white hover:text-blue-950 transition-colors duration-300">View</button>
-                            </a> */}
                             <button
                                 onClick={() => openModal('logos')}
                                 className="justify-center rounded-lg px-4 py-2 border-white border-2 hover:bg-white hover:text-blue-950 transition-colors duration-300"
