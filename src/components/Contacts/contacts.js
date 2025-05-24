@@ -58,8 +58,8 @@ const Contacts = () => {
                 <div className="flex flex-col justify-between items-start md:flex-row md:space-x-8">
                     {/* Contact Info Section */}
                     <div className="mb-8 md:mb-0 md:w-1/2 md:pr-20 space-y-6">
-                        <span className="text-lg font-semibold block mb-2">Contact Me</span>
-                        <h1 className="text-3xl md:text-4xl mb-4">LET'S GET IN TOUCH 📱</h1>
+                        <span className="text-lg font-semibold block mb-2 banco-font">Contact Me</span>
+                        <h1 className="text-3xl md:text-4xl mb-4 banco-font">LET'S GET IN TOUCH 📱</h1>
                         <p className="text-gray-300 mb-6">
                             Contact us at any moment. I'm always up for talking about football, philanthropy, open-source initiatives, and business. 📊.
                         </p>
