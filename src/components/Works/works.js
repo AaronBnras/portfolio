@@ -28,7 +28,10 @@ const Works = () => {
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                     {images.map((img, index) => (
-                        <img key={index} src={img} alt={`${title} ${index + 1}`} className="w-full h-48 object-cover shadow-sm border border-gray-700 rounded-lg" />
+                        <a key={index} href={img} target="_blank" rel="noopener noreferrer" className="block">
+                            <img src={img} alt={`${title} . Gallery . ${index + 1}`} className="w-full h-64 object-cover rounded-lg border border-gray-600 shadow-lg transition-transform transform hover:scale-105" />
+
+                        </a>
                     ))}
                 </div>
             </div>
@@ -130,7 +133,7 @@ const Works = () => {
                     {/* model only for logos */}
                     {modalType === 'logos' && (
                         <ModalGallery title="Logos" images={logoImages} />
-                    )} 
+                    )}
                 </div>
             </section>
         </div>
