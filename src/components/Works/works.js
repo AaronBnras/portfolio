@@ -15,13 +15,14 @@ const Works = () => {
     const closeModal = () => setModalType(null);
 
     const postersImages = [workersday, easter];
+    const logoImages = [graphics, graphics2];
 
     // Reusable ModalGallery Component
     const ModalGallery = ({ title, images }) => (
         <div className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50">
             <div className="bg-white rounded-lg p-4 max-w-3xl w-full">
                 <div className="flex justify-between items-center mb-4">
-                    <h2 className="text-xl font-semibold">{title}</h2>
+                    <h1 className="text-xl text-gray-800 justify-center font-semibold">{title}</h1>
                     <button onClick={closeModal} className="text-black text-xl font-bold">&times;</button>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
@@ -48,7 +49,7 @@ const Works = () => {
                     <div className="relative rounded-lg overflow-hidden shadow-2xl group transition-transform transform hover:scale-105">
                         <img src={webapp} alt="Web Application" className="w-full h-64 object-cover" />
                         <div className="bg-blue-950 p-2 px-4">
-                            <h1 className="">Web Appilication</h1>
+                            <h1 className="banco-font">Web Appilication</h1>
                         </div>
                         <div className="absolute flex-col inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center">
                             <h1 className="p-2 px-4">Homeless Management System</h1>
@@ -62,7 +63,7 @@ const Works = () => {
                     <div className="relative rounded-lg overflow-hidden shadow-2xl group transition-transform transform hover:scale-105">
                         <img src={mobileapp} alt="Mobile Application" className="w-full h-64 object-cover" />
                         <div className="bg-blue-950 p-2 px-4">
-                            <h1 className="">Mobile Application</h1>
+                            <h1 className="banco-font">Mobile Application</h1>
                         </div>
                         <div className="absolute flex-col inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center">
                             <h1 className="p-2 px-4">GreenHouseMCS</h1>
@@ -72,7 +73,7 @@ const Works = () => {
                         </div>
                     </div>
 
-                    {/* Third Card (Logo) */}
+                    {/* Third Card (Logo)
                     <div className="relative rounded-lg overflow-hidden shadow-2xl group transition-transform transform hover:scale-105">
                         <img src={graphics} alt="Logo" className="w-full h-64 object-cover" />
                         <div className="bg-blue-950 p-2 px-4">
@@ -80,23 +81,29 @@ const Works = () => {
                         </div>
                         <div className="absolute flex-col inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center">
                             <h1 className="p-2 px-4 justify-items-start">Logo</h1>
-                            <a href={`${process.env.PUBLIC_URL}/assets/graphics.png`} target="_blank" rel="noopener noreferrer" className="no-underline">
+                            <a href={graphics} target="_blank" rel="noopener noreferrer" className="no-underline">
                                 <button className="justify-center rounded-lg px-4 py-2 border-white border-2 hover:bg-white hover:text-blue-950 transition-colors duration-300">View</button>
                             </a>
                         </div>
-                    </div>
+                    </div> */}
 
                     {/* Fourth Card (Logo) */}
                     <div className="relative rounded-lg overflow-hidden shadow-2xl group transition-transform transform hover:scale-105">
                         <img src={graphics2} alt="Logo" className="w-full h-64 object-cover" />
                         <div className="bg-blue-950 p-2 px-4">
-                            <h1 className="">Logos</h1>
+                            <h1 className="banco-font">Logos</h1>
                         </div>
                         <div className="absolute flex-col inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center">
                             <h1 className="p-2 px-4">Logo</h1>
-                            <a href={`${process.env.PUBLIC_URL}/assets/graphics2.png`} target="_blank" rel="noopener noreferrer" className="no-underline">
+                            {/* <a href={graphics2} target="_blank" rel="noopener noreferrer" className="no-underline">
                                 <button className="justify-center rounded-lg px-4 py-2 border-white border-2 hover:bg-white hover:text-blue-950 transition-colors duration-300">View</button>
-                            </a>
+                            </a> */}
+                            <button
+                                onClick={() => openModal('logos')}
+                                className="justify-center rounded-lg px-4 py-2 border-white border-2 hover:bg-white hover:text-blue-950 transition-colors duration-300"
+                            >
+                                View
+                            </button>
                         </div>
                     </div>
 
@@ -104,7 +111,7 @@ const Works = () => {
                     <div className="relative rounded-lg overflow-hidden shadow-2xl group transition-transform transform hover:scale-105">
                         <img src={businesscard} alt="Business Card" className="w-full h-64 object-cover" />
                         <div className="bg-blue-950 p-2 px-4">
-                            <h1 className="">Business Card</h1>
+                            <h1 className="banco-font">Business Card</h1>
                         </div>
                         <div className="absolute flex-col inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center">
                             <h1 className="p-2 px-4">Business Card</h1>
@@ -118,7 +125,7 @@ const Works = () => {
                     <div className="relative rounded-lg overflow-hidden shadow-2xl group transition-transform transform hover:scale-105">
                         <img src={workersday} alt="Posters" className="w-full h-64 object-cover" />
                         <div className="bg-blue-950 p-2 px-4">
-                            <h1 className="">Posters</h1>
+                            <h1 className="banco-font">Posters</h1>
                         </div>
                         <div className="absolute flex-col inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center">
                             <h1 className="p-2 px-4">Posters</h1>
@@ -131,10 +138,15 @@ const Works = () => {
                         </div>
                     </div>
 
-                    {/* Show modal only if modalType === 'posters' */}
+                    {/* modal only for posters */}
                     {modalType === 'posters' && (
-                        <ModalGallery title="YSO Posters" images={postersImages} />
+                        <ModalGallery title="Posters" images={postersImages} />
                     )}
+
+                    {/* model only for logos */}
+                    {modalType === 'logos' && (
+                        <ModalGallery title="Logos" images={logoImages} />
+                    )} 
                 </div>
             </section>
         </div>
