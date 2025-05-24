@@ -1,4 +1,10 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Banco&display=swap');
+
+.banco-font {
+    font-family: 'Banco', cursive;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,9 +13,9 @@
     font-family: 'Ubuntu' sans-serif !important;
 }
 
-body{
+body {
     background: white !important;
-    color:black !important;
+    color: black !important;
     overflow: hidden;
     overflow-y: scroll;
 }

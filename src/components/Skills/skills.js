@@ -12,7 +12,7 @@ const Skills = () => {
                 id="skills"
                 className="overflow-hidden w-full max-w-7xl mx-auto flex flex-col justify-center text-center"
             >
-                <span className="skillTitle text-3xl sm:text-4xl md:text-5xl ml-1 pt-10 mb-6">
+                <span className="banco-font skillTitle text-3xl sm:text-4xl md:text-5xl ml-1 pt-10 mb-6">
                     What I Do 🤔
                 </span>
 
@@ -31,10 +31,10 @@ const Skills = () => {
                                 className="w-48 md:w-64 h-auto my-4 object-cover"
                             />
                         </div>
-                        <div className="flex-shrink-0 text-white text-4xl lg:text-5xl font-bold mb-4 text-left">
+                        <div className="flex-shrink-0 banco-font text-white text-4xl lg:text-5xl font-bold mb-4 text-left">
                             01.
                         </div>
-                        <h2 className="text-white font-bold md:font-semibold">
+                        <h2 className="text-white banco-font font-bold md:font-semibold">
                             Website Design and Development
                         </h2>
                         <p className="text-sm lg:text-base text-gray-300 mt-4 ">
@@ -52,10 +52,10 @@ const Skills = () => {
                                 className="w-48 md:w-64 h-auto my-4 object-contain"
                             />
                         </div>
-                        <div className="flex-shrink-0 text-white text-4xl lg:text-5xl font-bold mb-4">
+                        <div className="flex-shrink-0 banco-font text-white text-4xl lg:text-5xl font-bold mb-4">
                             02.
                         </div>
-                        <h2 className="text-white font-bold md:font-semibold">
+                        <h2 className="text-white font-bold md:font-semibold banco-font">
                             Mobile Application Development
                         </h2>
                         <p className="text-sm lg:text-base text-gray-300 mt-4">
@@ -72,10 +72,10 @@ const Skills = () => {
                                 className="w-48 md:w-64 h-auto my-4 object-contain"
                             />
                         </div>
-                        <div className="flex-shrink-0 text-white text-4xl lg:text-5xl font-bold mb-4">
+                        <div className="flex-shrink-0 banco-font text-white text-4xl lg:text-5xl font-bold mb-4">
                             03.
                         </div>
-                        <h2 className="text-white font-bold md:font-semibold">Graphics Design</h2>
+                        <h2 className="text-white font-bold md:font-semibold banco-font">Graphics Design</h2>
                         <p className="text-sm lg:text-base text-gray-300 mt-4">
                             Invest in high-quality graphic materials to effectively brand your
                             business or yourself. I create cards, banners, posters, logos, and
@@ -90,10 +90,10 @@ const Skills = () => {
                                 className="w-48 md:w-64 h-auto my-4 object-contain"
                             />
                         </div>
-                        <div className="flex-shrink-0 text-white text-4xl lg:text-5xl font-bold mb-4 ">
+                        <div className="flex-shrink-0 banco-font text-white text-4xl lg:text-5xl font-bold mb-4 ">
                             04.
                         </div>
-                        <h2 className="text-white font-bold md:font-semibold">Web and Computer Maintenance</h2>
+                        <h2 className="text-white font-bold md:font-semibold banco-font">Web and Computer Maintenance</h2>
                         <p className="text-sm lg:text-base text-gray-300 mt-4">
                             I provide comprehensive installation, configuration,
                             troubleshooting, and maintenance services for computers and their
