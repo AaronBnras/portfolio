@@ -9,7 +9,7 @@ const Footer = () => {
 
         <footer className="h-auto bg-blue-950 text-white py-6 md:py-12" >
             <div className="text-lg text-center md:text-center">
-                <h4 className="text-gray-300">Follow Me On</h4>
+                <h4 className="text-gray-300 banco-font">Follow Me On</h4>
             </div>
             <div className="flex justify-center space-x-4 mt-4 flex-wrap">
                 {[
@@ -40,8 +40,8 @@ const Footer = () => {
                 <div className="flex">
                     <p className="mr-1">© 2024 Made by</p>
                     <div className="ml-1 bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-primary">
-                        <span className="font-ubuntu">Aaron</span>
-                        <span className="font-ubuntu">Maeda</span>
+                        <span className="banco-font">Aaron</span>
+                        <span className="banco-font">Maeda</span>
                     </div>
                 </div>
             </div>
