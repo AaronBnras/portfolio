@@ -8,6 +8,7 @@ import businesscard from "../../assets/BusinessCard.png";
 import workersday from "../../assets/workersday.png";
 import easter from "../../assets/EasterPoster.png";
 import elegance from "../../assets/elegance.png";
+import sabasaba from "../../assets/sabasaba.png";
 
 const Works = () => {
     const [modalType, setModalType] = useState(null);
@@ -15,7 +16,7 @@ const Works = () => {
     const openModal = (type) => setModalType(type);
     const closeModal = () => setModalType(null);
 
-    const postersImages = [workersday, easter];
+    const postersImages = [workersday, easter, sabasaba];
     const logoImages = [graphics, graphics2, elegance];
 
     // Reusable ModalGallery Component
