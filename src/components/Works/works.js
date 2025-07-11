@@ -111,7 +111,7 @@ const Works = () => {
 
                     {/* Sixth Card (Posters) */}
                     <div className="relative rounded-lg overflow-hidden shadow-2xl group transition-transform transform hover:scale-105">
-                        <img src={workersday} alt="Posters" className="w-full h-64 object-cover" />
+                        <img src={sabasaba} alt="Posters" className="w-full h-64 object-cover" />
                         <div className="bg-blue-950 p-2 px-4">
                             <h1 className="banco-font">Posters</h1>
                         </div>
