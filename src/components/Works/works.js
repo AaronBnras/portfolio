@@ -9,8 +9,8 @@ import workersday from "../../assets/workersday.png";
 import easter from "../../assets/EasterPoster.png";
 import elegance from "../../assets/elegance.png";
 import sabasaba from "../../assets/sabasaba.png";
-import Charity1 from "../../assets/Charity1.png";
-import Charity2 from "../../assets/Charity2.png";
+import Charity1 from "../../assets/charity1.png";
+import Charity2 from "../../assets/charity2.png";
 
 
 const Works = () => {
@@ -114,7 +114,7 @@ const Works = () => {
 
                     {/* Sixth Card (Posters) */}
                     <div className="relative rounded-lg overflow-hidden shadow-2xl group transition-transform transform hover:scale-105">
-                        <img src={sabasaba} alt="Posters" className="w-full h-64 object-cover" />
+                        <img src={Charity1} alt="Posters" className="w-full h-64 object-cover" />
                         <div className="bg-blue-950 p-2 px-4">
                             <h1 className="banco-font">Posters</h1>
                         </div>
