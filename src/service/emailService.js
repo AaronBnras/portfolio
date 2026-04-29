@@ -2,7 +2,7 @@ import emailjs from '@emailjs/browser';
 
 export const sendEmail = (formData) => {
     return emailjs.send(
-        'service_vehgf1o',
+        'service_sdfkxc1',
         'template_ofppwta',
         {
             name: formData.name,
